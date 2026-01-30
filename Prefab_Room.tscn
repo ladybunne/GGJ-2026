@@ -1,0 +1,45 @@
+[gd_scene format=4 uid="uid://colaa66khdh3h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tu25x"]
+resource_name = "lambert1"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.6651851, 0.6651851, 0.6651851, 1)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qlgqr"]
+_surfaces = [{
+"aabb": AABB(-4, 0, -4, 7.999999, 5.9999995, 7.999999),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAAAQAFAAMABQABAAAAAgADAAYABgADAAUABgAEAAIAAAAHAAUABQAHAAYABwAAAAQABAAGAAcA"),
+"name": "lambert1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/f9/QAAAAAD9/39AAACAwAAAAAD9/39AAACAwAAAAAAAAIDAAACAwP//v0AAAIDA/f9/QAAAAAAAAIDAAACAwP//v0D9/39A/f9/QP//v0AAAIDA/f9/QP//v0D9/39A")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8bkab"]
+resource_name = "Room"
+_surfaces = [{
+"aabb": AABB(-4, 0, -4, 7.999999, 5.9999995, 7.999999),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_tu25x"),
+"name": "lambert1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/f9/QAAAAAD9/39AAACAwAAAAAD9/39AAACAwAAAAAAAAIDA/f9/QAAAAAAAAIDAAACAwP//v0AAAIDAAACAwAAAAAAAAIDAAACAwAAAAAD9/39AAACAwP//v0D9/39A/f9/QAAAAAD9/39A/f9/QP//v0D9/39AAACAwP//v0D9/39AAACAwAAAAAD9/39A/f9/QP//v0D9/39A/f9/QAAAAAD9/39A/f9/QAAAAAAAAIDA/f9/QP//v0AAAIDAAACAwAAAAAAAAIDAAACAwP//v0AAAIDA/f9/QP//v0AAAIDA/f9/QAAAAAAAAIDAAACAwP//v0D9/39A/f9/QP//v0D9/39A/f9/QP//v0AAAIDAAACAwP//v0AAAIDA/3///////7//f///////v/9///////+//3///////7////9//////////3//////////f/////////9///////////8AAP+//////wAA/7//////AAD/v/////8AAP+/AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD//////38AAAAAvdL/fwAA/3//v/9/AACB2v+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qlgqr")
+
+[node name="PrefabRoom" type="Node3D" unique_id=809112772]
+
+[node name="Room" type="MeshInstance3D" parent="." unique_id=1582180341]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("ArrayMesh_8bkab")
