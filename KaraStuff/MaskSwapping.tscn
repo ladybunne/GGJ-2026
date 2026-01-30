@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://odywe87r7mmt"]
+
+[ext_resource type="Script" uid="uid://15by84a3mbp8" path="res://KaraStuff/MaskSwapping.gd" id="1_14ufl"]
+[ext_resource type="PackedScene" uid="uid://dxgvc5kpqeas4" path="res://KaraStuff/Rabbit.tscn" id="1_amyfl"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_70rcc"]
+
+[sub_resource type="HeightMapShape3D" id="HeightMapShape3D_amyfl"]
+map_width = 3
+map_depth = 3
+map_data = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="MaskSwapping" type="Node3D" unique_id=1962630856]
+script = ExtResource("1_14ufl")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=30124981]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=2135326079]
+mesh = SubResource("PlaneMesh_70rcc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1028338735]
+shape = SubResource("HeightMapShape3D_amyfl")
+
+[node name="Rabbit" parent="." unique_id=1619951726 instance=ExtResource("1_amyfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3768925, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Rabbit" unique_id=1270164914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.22684795, 0.7931309)
+current = true

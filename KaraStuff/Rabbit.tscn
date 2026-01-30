@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dxgvc5kpqeas4"]
+
+[ext_resource type="Script" uid="uid://j60twrqd36np" path="res://KaraStuff/Rabbit.gd" id="1_61dii"]
+[ext_resource type="Texture2D" uid="uid://bjcfwpia24x6e" path="res://KaraStuff/Rabbit-clipart-free-clipart-images.png" id="1_tdmu2"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6hfgk"]
+
+[node name="Rabbit" type="CharacterBody3D" unique_id=1575798027]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+script = ExtResource("1_61dii")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1746886721]
+shape = SubResource("SphereShape3D_6hfgk")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1546521084]
+transform = Transform3D(0.18855356, 0, 0, 0, 0.18855356, 0, 0, 0, 1.6666664, 0, 0, 0)
+texture = ExtResource("1_tdmu2")
