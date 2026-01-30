@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b0kquth18gver"]
+
+[ext_resource type="Script" uid="uid://dyb447a6mhyf1" path="res://Scripts/Dancer.gd" id="1_ffqhg"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jp02w"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ffqhg"]
+size = Vector3(0.735, 0.42, 0.485)
+
+[node name="Dancer" type="Node3D" unique_id=452770991]
+script = ExtResource("1_ffqhg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=940356360]
+mesh = SubResource("CapsuleMesh_jp02w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1284678396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48565948, 0.3345691, 0)
+mesh = SubResource("BoxMesh_ffqhg")
+
+[node name="TargetPosition" type="Node3D" parent="." unique_id=336666078]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
