@@ -1,5 +1,13 @@
 class_name MaskData extends Resource
 
+# KARA'S NOTES
+#
+# All of these arrays / enums can be changed freely, and all of the
+# generation stuff will work accordingly. Just need to make sure that
+# colours and names match.
+#
+# Enum names will get converted to lowercase, which should be fine.
+
 const MASK_COLOURS: Array[Color] = [Color.WHITE, Color.RED, Color.BLUE, Color.ORANGE]
 const MASK_COLOUR_NAMES: Array[String] = ["white", "red", "blue", "orange"]
 

@@ -102,8 +102,3 @@ static func get_string_value_for_clue(p_clue_category: String, p_clue_value: int
 		_:
 			assert(false)
 			return ""
-
-
-
-# Generate random target name.
-# Test clue.
