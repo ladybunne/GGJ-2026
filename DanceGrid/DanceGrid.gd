@@ -35,7 +35,7 @@ func CheckCompleteAt(dancePos : Vector2i) -> bool:
 		var foundPatterns = GetPatternsFor(dancePos, direction)
 		if (foundPatterns.is_empty()):
 			if (logIncomplete):
-				print("Incomplete at: " + str(dancePos) + ", direction" + str(direction))
+				print("Incomplete at: " + str(dancePos) + ", direction " + str(direction))
 			complete = false
 	return complete
 
