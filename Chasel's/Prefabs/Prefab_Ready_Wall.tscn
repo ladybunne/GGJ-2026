@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dfyk56iaurx72"]
+
+[ext_resource type="PackedScene" uid="uid://crfif4jb7df16" path="res://Chasel's/Prefabs/Prefab_Pillar.tscn" id="1_kmfkq"]
+[ext_resource type="PackedScene" uid="uid://0v1ru5ud5b34" path="res://Chasel's/Prefabs/Prefab_Wall.tscn" id="2_hiisd"]
+[ext_resource type="PackedScene" uid="uid://cgttw5wkpv72o" path="res://Chasel's/Prefabs/Prefab_Window.tscn" id="3_0yjx6"]
+
+[node name="PrefabReadyWall" type="Node3D" unique_id=1801545161]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="PrefabPillar" parent="." unique_id=949865969 instance=ExtResource("1_kmfkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.346928)
+
+[node name="PrefabPillar2" parent="." unique_id=1276103129 instance=ExtResource("1_kmfkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.1203785)
+
+[node name="PrefabWall" parent="." unique_id=983530148 instance=ExtResource("2_hiisd")]
+
+[node name="PrefabWindow" parent="." unique_id=1165594285 instance=ExtResource("3_0yjx6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.2919636)
+
+[node name="PrefabPillar3" parent="." unique_id=506607803 instance=ExtResource("1_kmfkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22.110878)
+
+[node name="PrefabPillar4" parent="." unique_id=315480900 instance=ExtResource("1_kmfkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.884328)
+
+[node name="PrefabWindow2" parent="." unique_id=1577556503 instance=ExtResource("3_0yjx6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.861233)
