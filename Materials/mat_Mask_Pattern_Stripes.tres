@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://yx4bbv34yxna"]
+
+[ext_resource type="Texture2D" uid="uid://bdnq56fbnq0wk" path="res://Materials/Textures/Texture_Mask_Pattern_Stripes.png" id="1_pk8dx"]
+
+[resource]
+albedo_texture = ExtResource("1_pk8dx")

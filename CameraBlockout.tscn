@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://dy52lo2e6lrxn"]
 
-[ext_resource type="PackedScene" uid="uid://ccvt1hoie5wd5" path="res://Prefab_Dress.tscn" id="1_bvttt"]
+[ext_resource type="PackedScene" uid="uid://ccvt1hoie5wd5" path="res://Chasel's/Prefab_Dress.tscn" id="1_bvttt"]
 [ext_resource type="Material" uid="uid://cc27tshc5vvnl" path="res://Red.tres" id="1_r75t6"]
 [ext_resource type="Material" uid="uid://cte4ui1ph800o" path="res://Purple.tres" id="2_bvttt"]
-[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Prefab_Room.tscn" id="2_pe6rr"]
-[ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Prefab_Suit.tscn" id="3_1jp0m"]
+[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Chasel's/Prefab_Room.tscn" id="2_pe6rr"]
+[ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Chasel's/Prefab_Suit.tscn" id="3_1jp0m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jugau"]
 resource_name = "lambert1"
