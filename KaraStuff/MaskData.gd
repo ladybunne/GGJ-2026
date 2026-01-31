@@ -12,6 +12,9 @@ enum MaskShape { HEAD, FACE, HALFFACE }
 enum MaskVariant { VARIANT_1, VARIANT_2, VARIANT_3 }
 @export var variant: MaskVariant = MaskVariant.VARIANT_1
 
+# Decided not to add attire (suit vs dress) as it's more fun for
+# that to just be flavour, rather than 
+
 func _init(p_colour: Color = colour, p_pattern: MaskPattern = pattern,
 	p_shape: MaskShape = shape, p_variant: MaskVariant = variant) -> void:
 	colour = p_colour

@@ -1,7 +1,20 @@
 [gd_scene format=3 uid="uid://dhuspkcej56gx"]
 
 [ext_resource type="PackedScene" uid="uid://deks381p26ywk" path="res://KaraStuff/MaskManager.tscn" id="1_kd31s"]
+[ext_resource type="PackedScene" uid="uid://b613d8bkeq1x3" path="res://KaraStuff/Dancer.tscn" id="2_cruk7"]
 
 [node name="TestScene" type="Node3D" unique_id=163321980]
 
 [node name="MaskManager" parent="." unique_id=1794890609 instance=ExtResource("1_kd31s")]
+
+[node name="Dancer" parent="." unique_id=1651563437 instance=ExtResource("2_cruk7")]
+dress = false
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=770454134]
+transform = Transform3D(0.8980624, -0.058975182, 0.42853665, 0, 0.97450763, 0.22435492, -0.4488557, -0.19880535, 0.8758968, 1.0833169, 1.7366436, 2.8332734)
+rotation_edit_mode = 2
+current = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1167343849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0564663, 2.56907)
+light_energy = 3.0

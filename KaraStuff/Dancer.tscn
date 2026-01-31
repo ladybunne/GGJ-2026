@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b613d8bkeq1x3"]
+
+[ext_resource type="Script" uid="uid://6115myrtyh1t" path="res://KaraStuff/Dancer.gd" id="1_fq7e7"]
+[ext_resource type="PackedScene" uid="uid://ccvt1hoie5wd5" path="res://Prefab_Dress.tscn" id="2_batxx"]
+[ext_resource type="Resource" uid="uid://bjq5kjt4emxpy" path="res://KaraStuff/DefaultMaskData.tres" id="2_kgkpx"]
+[ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Prefab_Suit.tscn" id="3_rir6l"]
+[ext_resource type="PackedScene" uid="uid://bc8eqeivoavv0" path="res://KaraStuff/Mask.tscn" id="4_rir6l"]
+
+[node name="Dancer" type="Node3D" unique_id=1651563437]
+script = ExtResource("1_fq7e7")
+mask_data = ExtResource("2_kgkpx")
+
+[node name="PrefabDress" parent="." unique_id=473968745 instance=ExtResource("2_batxx")]
+
+[node name="PrefabSuit" parent="." unique_id=266672214 instance=ExtResource("3_rir6l")]
+
+[node name="Mask" parent="." unique_id=527544622 instance=ExtResource("4_rir6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0.10559523)
