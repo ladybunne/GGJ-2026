@@ -1,0 +1,37 @@
+[gd_scene format=4 uid="uid://cwf2hnwbt8kb2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dc60k"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ham0f"]
+_surfaces = [{
+"aabb": AABB(-0.0003395063, -0.0033786576, 0.012476765, 0.0006790126, 0.00032192096, 0.0011532679),
+"format": 34359742465,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAFAAMAAAAEAAUAAgAGAAQABgAFAAQAAQAGAAIABQAGAAMAAwAGAAEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("AAAAAIhTSLtYa0w8AAAAAHhsXbvKvlk8jbp7OZI+V7vKvlk8jbp7uZI+V7vKvlk8xP+xOYhTSLvKvlk8xP+xuYhTSLvKvlk8AAAAAIhTSLuAUF88")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yifme"]
+resource_name = "Sphere_047"
+_surfaces = [{
+"aabb": AABB(-0.0003395063, -0.0033786576, 0.012476765, 0.0006790126, 0.00032192096, 0.0011532679),
+"attribute_data": PackedByteArray("AACgPgAAgD8AAIA+qKqqPgAAwD6oqqo+AADAPqiqqj4AAOA+AAAAAAAAAD+oqqo+AABAPgAAgD8AAAA+qKqqPgAAgD6oqqo+AACAPqiqqj4AAKA+AAAAAAAAwD6oqqo+BACAPQAAgD8AAAAAqKqqPgAAAD6oqqo+AAAAPqiqqj4AAEA+AAAAAAAAgD6oqqo+AADgPgAAgD8AAAA/qKqqPgAAAACoqqo+BACAPQAAAAAAAAAAqKqqPgQAgD0AAAAAAAAAPqiqqj4AAOA+AACAPwAAwD6oqqo+AAAAP6iqqj4="),
+"format": 34359742487,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACQAKAAsADAANAA4ADwAQABEAEgATABQAFQAUABMAFgAXABgAGQAaABsA"),
+"material": SubResource("StandardMaterial3D_dc60k"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("AAAAAIhTSLtYa0w8AAAAAHhsXbvKvlk8jbp7OZI+V7vKvlk8jbp7OZI+V7vKvlk8AAAAAIhTSLuAUF88xP+xOYhTSLvKvlk8AAAAAIhTSLtYa0w8jbp7uZI+V7vKvlk8AAAAAHhsXbvKvlk8AAAAAHhsXbvKvlk8AAAAAIhTSLuAUF88jbp7OZI+V7vKvlk8AAAAAIhTSLtYa0w8xP+xuYhTSLvKvlk8jbp7uZI+V7vKvlk8jbp7uZI+V7vKvlk8AAAAAIhTSLuAUF88AAAAAHhsXbvKvlk8AAAAAIhTSLtYa0w8xP+xOYhTSLvKvlk8xP+xuYhTSLvKvlk8AAAAAIhTSLuAUF88xP+xuYhTSLvKvlk8AAAAAIhTSLuAUF88jbp7uZI+V7vKvlk8AAAAAIhTSLtYa0w8jbp7OZI+V7vKvlk8xP+xOYhTSLvKvlk8brgbHObbC9JuuBsc5tsL0m64Gxzm2wvSjLQKaemmieyMtApp6aaJ7Iy0CmnpponskEcbHObb862QRxsc5tvzrZBHGxzm2/Ote5VLSebbC9J7lUtJ5tsL0nuVS0nm2wvSJx4HRemmdJMnHgdF6aZ0kyceB0XppnSTg2pLSebb862DaktJ5tvzrYNqS0nm2/Ot/3///////z//f///////P/9///////8//3///////z9ySwpp6aZ0k3JLCmnppnSTcksKaemmdJPX4QdF6aaJ7NfhB0Xppons1+EHRemmiew=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ham0f")
+
+[node name="accessories_gem" type="MeshInstance3D" unique_id=809580456]
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, -2.842171e-14, 0, 2.842171e-14, 1.0000002, 0, 0, 0)
+mesh = SubResource("ArrayMesh_yifme")
