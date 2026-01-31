@@ -5,6 +5,7 @@
 [ext_resource type="Resource" uid="uid://bjq5kjt4emxpy" path="res://KaraStuff/DefaultMaskData.tres" id="2_kgkpx"]
 [ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Prefab_Suit.tscn" id="3_rir6l"]
 [ext_resource type="PackedScene" uid="uid://bc8eqeivoavv0" path="res://KaraStuff/Mask.tscn" id="4_rir6l"]
+[ext_resource type="Texture2D" uid="uid://n24j8y78cnra" path="res://KaraStuff/mask-billboard.svg" id="6_xnt0f"]
 
 [node name="Dancer" type="Node3D" unique_id=1651563437 groups=["Dancers"]]
 script = ExtResource("1_fq7e7")
@@ -16,3 +17,8 @@ mask_data = ExtResource("2_kgkpx")
 
 [node name="Mask" parent="." unique_id=527544622 instance=ExtResource("4_rir6l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0.10559523)
+
+[node name="MaskSprite" type="Sprite3D" parent="." unique_id=1222287649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4650457, 0)
+billboard = 1
+texture = ExtResource("6_xnt0f")
