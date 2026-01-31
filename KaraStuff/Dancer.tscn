@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Prefab_Suit.tscn" id="3_rir6l"]
 [ext_resource type="PackedScene" uid="uid://bc8eqeivoavv0" path="res://KaraStuff/Mask.tscn" id="4_rir6l"]
 
-[node name="Dancer" type="Node3D" unique_id=1651563437]
+[node name="Dancer" type="Node3D" unique_id=1651563437 groups=["Dancers"]]
 script = ExtResource("1_fq7e7")
 mask_data = ExtResource("2_kgkpx")
 

@@ -4,7 +4,11 @@ class_name Dancer extends Node3D
 @onready var suit_scene: Node3D = $PrefabSuit
 @onready var mask: Mask = $Mask
 
-@export var mask_data: MaskData
+@export var mask_data: MaskData :
+	set(p_mask_data):
+		mask_data = p_mask_data
+		if mask_data != null:
+			mask_data.debug_print()
 
 @export var dress: bool = true :
 	set(p_dress):

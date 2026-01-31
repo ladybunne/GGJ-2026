@@ -8,7 +8,6 @@
 [node name="MaskManager" parent="." unique_id=1794890609 instance=ExtResource("1_kd31s")]
 
 [node name="Dancer" parent="." unique_id=1651563437 instance=ExtResource("2_cruk7")]
-dress = false
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=770454134]
 transform = Transform3D(0.8980624, -0.058975182, 0.42853665, 0, 0.97450763, 0.22435492, -0.4488557, -0.19880535, 0.8758968, 1.0833169, 1.7366436, 2.8332734)
