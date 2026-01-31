@@ -10,9 +10,18 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	ArrangeIntoPositions()
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	# Leaving here for debugging
+	ArrangeIntoPositions()
+	pass
+
+func ArrangeIntoPositions() -> void:
 	var dancers = get_children()
-	var halfTotalWidth = widthBetweenPairs * gridCols
-	var halfTotalHeight = heightBetweenPairs * gridRows
+	var halfTotalWidth : float = widthBetweenPairs * (gridCols - 1) / 2.0
+	var halfTotalHeight : float = heightBetweenPairs * (gridRows - 1) / 2.0
 	for i : int in(dancers.size()):
 		var col : int = (i / 2)  % gridCols
 		var row : int = (i / 2) / gridCols
@@ -23,11 +32,6 @@ func _ready() -> void:
 		else:
 			x -= dancerBetweenSpacing / 2.0
 		var z : float = heightBetweenPairs * row
-		x -= halfTotalWidth / 2.0
-		z -= halfTotalHeight / 2.0
+		x -= halfTotalWidth
+		z -= halfTotalHeight
 		dancers[i].transform.origin = Vector3(x, 0.0, z)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

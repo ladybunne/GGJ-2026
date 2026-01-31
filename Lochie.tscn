@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://56f7bxkasclg"]
 
-[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Prefab_Room.tscn" id="1_7jqr2"]
 [ext_resource type="Script" uid="uid://dns1kvvqv6fno" path="res://DancerSpacer.gd" id="1_ue3c1"]
+[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Chasel's/Prefab_Room.tscn" id="3_ue3c1"]
 [ext_resource type="PackedScene" uid="uid://b613d8bkeq1x3" path="res://KaraStuff/Dancer.tscn" id="4_ki0jj"]
 
 [node name="Lochie" type="Node3D" unique_id=431371010]
@@ -115,11 +115,11 @@ transform = Transform3D(0.38556784, -0.23880705, 0.89123994, -8.881784e-16, 0.96
 fov = 45.0
 near = 0.004
 
-[node name="PrefabRoom" parent="." unique_id=809112772 instance=ExtResource("1_7jqr2")]
-
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1018801700]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5366602, 0)
 light_energy = 1.515
 light_indirect_energy = 1.17
 light_size = 1.0
 omni_range = 16.494
+
+[node name="PrefabRoom2" parent="." unique_id=809112772 instance=ExtResource("3_ue3c1")]
