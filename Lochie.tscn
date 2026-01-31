@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://56f7bxkasclg"]
+
+[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Prefab_Room.tscn" id="1_7jqr2"]
+[ext_resource type="Script" uid="uid://dns1kvvqv6fno" path="res://DancerSpacer.gd" id="1_ue3c1"]
+[ext_resource type="PackedScene" uid="uid://b613d8bkeq1x3" path="res://KaraStuff/Dancer.tscn" id="4_ki0jj"]
+
+[node name="Lochie" type="Node3D" unique_id=431371010]
+
+[node name="Dancers" type="Node3D" parent="." unique_id=792776525 groups=["Dancers"]]
+script = ExtResource("1_ue3c1")
+gridCols = 4
+gridRows = 4
+widthBetweenPairs = 5.0
+heightBetweenPairs = 4.5
+dancerBetweenSpacing = 1.6
+
+[node name="Dancer" parent="Dancers" unique_id=1651563437 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.042471886, 0, 3.4626522)
+
+[node name="Dancer2" parent="Dancers" unique_id=1600924775 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06533241, 0, 5.8012094)
+
+[node name="Dancer3" parent="Dancers" unique_id=1867690490 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2607884, 0, 6.118113)
+
+[node name="Dancer4" parent="Dancers" unique_id=1959870869 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0024066, 0, 3.8352432)
+
+[node name="Dancer5" parent="Dancers" unique_id=681680782 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0143323, 0, 0.39311767)
+
+[node name="Dancer6" parent="Dancers" unique_id=346505936 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8960032, 9.536743e-07, -1.6553509)
+
+[node name="Dancer7" parent="Dancers" unique_id=89434397 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9433227, 9.536743e-07, -4.1919365)
+
+[node name="Dancer8" parent="Dancers" unique_id=1640279643 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7940507, 0, -6.136054)
+
+[node name="Dancer9" parent="Dancers" unique_id=35026382 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1334796, 0, 9.140499)
+
+[node name="Dancer10" parent="Dancers" unique_id=316032682 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.145347, 0, 10.856471)
+
+[node name="Dancer11" parent="Dancers" unique_id=1363592129 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9817276, 0, 5.847371)
+
+[node name="Dancer12" parent="Dancers" unique_id=1950252820 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2401094, 0, 3.5645013)
+
+[node name="Dancer13" parent="Dancers" unique_id=212519593 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2281837, 0, 0.12237573)
+
+[node name="Dancer14" parent="Dancers" unique_id=208644785 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3465128, 9.536743e-07, -1.9260929)
+
+[node name="Dancer15" parent="Dancers" unique_id=1855995807 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0092173, 9.536743e-07, -4.7280474)
+
+[node name="Dancer16" parent="Dancers" unique_id=729261644 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4484653, 0, -6.406796)
+
+[node name="Dancer17" parent="Dancers" unique_id=628954921 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1090364, 0, 8.869757)
+
+[node name="Dancer18" parent="Dancers" unique_id=1135806866 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.097169, 0, 10.58573)
+
+[node name="Dancer19" parent="Dancers" unique_id=181982855 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.698049, 0, 6.055174)
+
+[node name="Dancer20" parent="Dancers" unique_id=1181665673 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4396672, 0, 3.772304)
+
+[node name="Dancer21" parent="Dancers" unique_id=300342752 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.451593, 0, 0.33017826)
+
+[node name="Dancer22" parent="Dancers" unique_id=986938456 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3332639, 9.536743e-07, -1.7182903)
+
+[node name="Dancer23" parent="Dancers" unique_id=2073469190 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3805833, 9.536743e-07, -4.254875)
+
+[node name="Dancer24" parent="Dancers" unique_id=821132308 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2313113, 0, -6.1989937)
+
+[node name="Dancer25" parent="Dancers" unique_id=2138828188 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5707402, 0, 9.077559)
+
+[node name="Dancer26" parent="Dancers" unique_id=176715083 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5826077, 0, 10.793532)
+
+[node name="Dancer27" parent="Dancers" unique_id=1200100797 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65629435, -9.536743e-07, 10.274677)
+
+[node name="Dancer28" parent="Dancers" unique_id=1205574554 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7335534, -9.536743e-07, 8.304059)
+
+[node name="Dancer29" parent="Dancers" unique_id=346231916 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22690344, -9.536743e-07, -4.251604)
+
+[node name="Dancer30" parent="Dancers" unique_id=1771124247 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19833612, -9.536743e-07, -6.3181114)
+
+[node name="Dancer31" parent="Dancers" unique_id=687043417 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21596289, -9.536743e-07, -2.4062986)
+
+[node name="Dancer32" parent="Dancers" unique_id=538122556 instance=ExtResource("4_ki0jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5780697, -9.536743e-07, 0.20487309)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=194992001]
+transform = Transform3D(0.38556784, -0.23880705, 0.89123994, -8.881784e-16, 0.9659259, 0.25881907, -0.9226795, -0.09979232, 0.37242994, 7.2613115, 3.878699, 2.0287037)
+fov = 45.0
+near = 0.004
+
+[node name="PrefabRoom" parent="." unique_id=809112772 instance=ExtResource("1_7jqr2")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1018801700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5366602, 0)
+light_energy = 1.515
+light_indirect_energy = 1.17
+light_size = 1.0
+omni_range = 16.494
