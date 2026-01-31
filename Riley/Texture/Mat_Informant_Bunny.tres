@@ -1,3 +1,9 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://br8op5iqntrue"]
 
+[ext_resource type="Texture2D" uid="uid://clxbhd0wrsrnj" path="res://Riley/Texture/T_Bunny_Base.webp" id="1_s33l8"]
+
 [resource]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_s33l8")
