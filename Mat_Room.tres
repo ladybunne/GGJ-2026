@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://f44gtsbhe1yg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yxpj1"]
+load_path = "res://.godot/imported/Room_Ceiling.png-2d2cbf74283caf460ba8818b493530f8.s3tc.ctex"
+
+[resource]
+albedo_texture = SubResource("CompressedTexture2D_yxpj1")
