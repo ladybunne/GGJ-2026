@@ -22,8 +22,6 @@ func initialise_dancers() -> void:
 	for i in range(0, dancers.size()):
 		dancers[i].mask_data = permutations[i]
 	
-	
-	
 	#print("%s permutations generated." % permutations.size())
 	#print("Printing all permutations.")
 	#for permutation in permutations:
