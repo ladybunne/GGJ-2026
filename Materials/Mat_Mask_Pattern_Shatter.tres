@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dru7aw0jcbsv5"]
+
+[ext_resource type="Texture2D" uid="uid://dfi7v5k0gjfw3" path="res://Materials/Textures/Texture_Mask_Pattern_Shatter.png" id="1_21gaf"]
+
+[resource]
+albedo_texture = ExtResource("1_21gaf")

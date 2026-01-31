@@ -1,0 +1,49 @@
+[gd_scene format=4 uid="uid://dcbiwlqektbrj"]
+
+[ext_resource type="Material" uid="uid://bcae5h1wug61u" path="res://Chasel's/Materials/Mat_Floor.tres" id="1_l711i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ky0q4"]
+resource_name = "Default_Material"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.735357, 0.735357, 0.735357, 1)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ce1o3"]
+_surfaces = [{
+"aabb": AABB(-2300, 0, -2400, 2399.9998, 1e-05, 2399.9998),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"name": "Default_Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("6P/HQgAAAAAAAEC5AMAPxQAAAAAAAEC5AMAPxQAAAAAAABbF6P/HQgAAAAAAABbF")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sx8ag"]
+resource_name = "Floor"
+_surfaces = [{
+"aabb": AABB(-2300, 0, -2400, 2399.9998, 1e-05, 2399.9998),
+"attribute_data": PackedByteArray("c31/P3N9fz/AjAI7c31/P8CMAjsAjAI7c31/PwCMAjs="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"material": SubResource("StandardMaterial3D_ky0q4"),
+"name": "Default_Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("6P/HQgAAAAAAAEC5AMAPxQAAAAAAAEC5AMAPxQAAAAAAABbF6P/HQgAAAAAAABbF/3///////7//f///////v/9///////+//3///////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ce1o3")
+
+[node name="PrefabFloor" type="Node3D" unique_id=1221140598]
+transform = Transform3D(-0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=2046080575]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1, 0, 0)
+material_override = ExtResource("1_l711i")
+mesh = SubResource("ArrayMesh_sx8ag")

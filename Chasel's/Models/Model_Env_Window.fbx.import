@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dsjqj3ckrd032"
-path="res://.godot/imported/BlockoutDress.fbx-f46a4b7fd538036d52d950844af62587.scn"
+uid="uid://befi475xpsdqk"
+path="res://.godot/imported/Model_Env_Window.fbx-cb1faf8d01eb35f3d12a82a8803740c9.scn"
 
 [deps]
 
-source_file="res://BlockoutDress.fbx"
-dest_files=["res://.godot/imported/BlockoutDress.fbx-f46a4b7fd538036d52d950844af62587.scn"]
+source_file="res://Chasel's/Models/Model_Env_Window.fbx"
+dest_files=["res://.godot/imported/Model_Env_Window.fbx-cb1faf8d01eb35f3d12a82a8803740c9.scn"]
 
 [params]
 

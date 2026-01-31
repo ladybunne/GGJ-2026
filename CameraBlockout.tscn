@@ -1,10 +1,11 @@
 [gd_scene format=4 uid="uid://dy52lo2e6lrxn"]
 
-[ext_resource type="PackedScene" uid="uid://ccvt1hoie5wd5" path="res://Prefab_Dress.tscn" id="1_bvttt"]
+[ext_resource type="PackedScene" uid="uid://ccvt1hoie5wd5" path="res://Chasel's/Prefab_Dress.tscn" id="1_bvttt"]
 [ext_resource type="Material" uid="uid://cc27tshc5vvnl" path="res://Red.tres" id="1_r75t6"]
 [ext_resource type="Material" uid="uid://cte4ui1ph800o" path="res://Purple.tres" id="2_bvttt"]
-[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Prefab_Room.tscn" id="2_pe6rr"]
-[ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Prefab_Suit.tscn" id="3_1jp0m"]
+[ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Chasel's/Prefab_Room.tscn" id="2_pe6rr"]
+[ext_resource type="PackedScene" uid="uid://4qxpglrm71ec" path="res://Chasel's/Prefab_Suit.tscn" id="3_1jp0m"]
+[ext_resource type="PackedScene" uid="uid://dfyk56iaurx72" path="res://Chasel's/Prefabs/Prefab_Ready_Wall.tscn" id="6_nab02"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jugau"]
 resource_name = "lambert1"
@@ -88,70 +89,128 @@ shadow_mesh = SubResource("ArrayMesh_nm6bb")
 
 [node name="CameraBlockout" type="Node3D" unique_id=431371010]
 
+[node name="PrefabRoom" parent="." unique_id=809112772 instance=ExtResource("2_pe6rr")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
 [node name="Camera3D" type="Camera3D" parent="." unique_id=194992001]
-transform = Transform3D(0.38556784, -0.23880705, 0.89123994, -8.881784e-16, 0.9659259, 0.25881907, -0.9226795, -0.09979232, 0.37242994, 2.548069, 1.6771119, -0.019883752)
+transform = Transform3D(0.38590607, -0.19180647, 0.90237844, 0, 0.9781476, 0.20791171, -0.9225381, -0.08023439, 0.3774731, 0.8445883, 1.6824715, -1.0737854)
 fov = 45.0
 near = 0.004
 
-[node name="PrefabRoom" parent="." unique_id=809112772 instance=ExtResource("2_pe6rr")]
-
 [node name="PrefabDress_Main" type="Node3D" parent="." unique_id=473968745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0032625, 0, -0.9339905)
 
 [node name="Dress" type="MeshInstance3D" parent="PrefabDress_Main" unique_id=1000640386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2997818, 0, -0.119911194)
 mesh = SubResource("ArrayMesh_6vghh")
 surface_material_override/0 = ExtResource("2_bvttt")
 
 [node name="PrefabSuit" parent="." unique_id=266672214 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.2248166)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, -2.2787182)
 
 [node name="PrefabDress2" parent="." unique_id=1727813961 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.0455494)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, 2.3321362)
 
 [node name="PrefabSuit2" parent="." unique_id=2132024009 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.8207328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, 1.1073196)
 
 [node name="PrefabDress3" parent="." unique_id=247007429 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.738163)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, -4.8666134)
 
 [node name="PrefabSuit3" parent="." unique_id=480153102 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.9629793)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, -6.0914297)
 
 [node name="PrefabDress4" parent="." unique_id=1260069751 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.563285, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, -1.0539017)
 
 [node name="PrefabSuit4" parent="." unique_id=1594615660 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.563285, 0, -1.2248166)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, -2.2787182)
 
 [node name="PrefabDress5" parent="." unique_id=1024196864 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.563285, 0, 4.0455494)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, 2.3321362)
 
 [node name="PrefabSuit5" parent="." unique_id=796360564 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.563285, 0, 2.8207328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, 1.1073196)
 
 [node name="PrefabDress6" parent="." unique_id=1165018016 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.563285, 0, -4.738163)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, -4.8666134)
 
 [node name="PrefabSuit6" parent="." unique_id=647467967 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.563285, 0, -5.9629793)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, -6.0914297)
 
 [node name="PrefabDress7" parent="." unique_id=1434224699 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.560602, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, -1.0539017)
 
 [node name="PrefabSuit7" parent="." unique_id=702856839 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.560602, 0, -1.2248166)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, -2.2787182)
 
 [node name="PrefabDress8" parent="." unique_id=519081797 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.560602, 0, 4.0455494)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, 2.3321362)
 
 [node name="PrefabSuit8" parent="." unique_id=1742484932 instance=ExtResource("3_1jp0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.560602, 0, 2.8207328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, 1.1073196)
+
+[node name="PrefabDress10" parent="." unique_id=2083166420 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, 6.407942)
+
+[node name="PrefabSuit10" parent="." unique_id=1164844434 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7034807, 0, 5.1831255)
+
+[node name="PrefabDress11" parent="." unique_id=297750968 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, 6.407942)
+
+[node name="PrefabSuit11" parent="." unique_id=1030373451 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.427389, 0, 5.1831255)
+
+[node name="PrefabDress13" parent="." unique_id=929048841 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, -1.0539017)
+
+[node name="PrefabSuit13" parent="." unique_id=902397901 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, -2.2787182)
+
+[node name="PrefabDress14" parent="." unique_id=925184031 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, 2.3321362)
+
+[node name="PrefabSuit14" parent="." unique_id=1526104086 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, 1.1073196)
+
+[node name="PrefabDress15" parent="." unique_id=1628714193 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, -4.8666134)
+
+[node name="PrefabSuit15" parent="." unique_id=1889597403 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, -6.0914297)
+
+[node name="PrefabDress16" parent="." unique_id=696824083 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, 6.407942)
+
+[node name="PrefabSuit16" parent="." unique_id=1689979870 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.557909, 0, 5.1831255)
+
+[node name="PrefabDress12" parent="." unique_id=1546867684 instance=ExtResource("1_bvttt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, 6.407942)
+
+[node name="PrefabSuit12" parent="." unique_id=2118541404 instance=ExtResource("3_1jp0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, 5.1831255)
 
 [node name="PrefabDress9" parent="." unique_id=1628328408 instance=ExtResource("1_bvttt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.560602, 0, -4.738163)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9577875, 0, -4.8666134)
 
 [node name="PrefabSuit9" type="Node3D" parent="." unique_id=125002572]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.560602, 0, -5.9629793)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5573397, 0, -6.89697)
 
 [node name="Suit" type="MeshInstance3D" parent="PrefabSuit9" unique_id=176640904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.59955215, 0, 0.8055401)
 mesh = SubResource("ArrayMesh_lf4bc")
 surface_material_override/0 = ExtResource("1_r75t6")
+
+[node name="PrefabReadyWall" parent="." unique_id=1801545161 instance=ExtResource("6_nab02")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -8.003273, 0, 8.5)
+
+[node name="PrefabReadyWall2" parent="." unique_id=1530522352 instance=ExtResource("6_nab02")]
+transform = Transform3D(-0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 8.5, 0, 8.5)
+
+[node name="PrefabReadyWall3" parent="." unique_id=2102003657 instance=ExtResource("6_nab02")]
+transform = Transform3D(3.059797e-08, -6.119594e-08, -0.7, 0, 0.7, -6.119594e-08, -0.7, -2.6749597e-15, -3.059797e-08, -8.587345, 0, 8.5)
+
+[node name="PrefabReadyWall4" parent="." unique_id=449709321 instance=ExtResource("6_nab02")]
+transform = Transform3D(-5.2848534e-08, -6.119594e-08, -0.7, 6.119594e-08, 0.7, -6.119594e-08, 0.7, -6.119595e-08, -5.284853e-08, -7.6712475, 0, -8.393293)

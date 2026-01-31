@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://colaa66khdh3h"]
+
+[ext_resource type="ArrayMesh" uid="uid://l7rdyvq74j3h" path="res://Chasel's/Mesh_Room.obj" id="1_ole3c"]
+[ext_resource type="Material" uid="uid://f44gtsbhe1yg" path="res://Materials/Mat_Room.tres" id="1_the87"]
+
+[node name="PrefabRoom" type="Node3D" unique_id=809112772]
+
+[node name="MeshRoom" type="MeshInstance3D" parent="." unique_id=812664558]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+material_override = ExtResource("1_the87")
+mesh = ExtResource("1_ole3c")

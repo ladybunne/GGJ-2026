@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://buysd5aal7fpc"]
+
+[ext_resource type="PackedScene" uid="uid://dcbiwlqektbrj" path="res://Chasel's/Prefabs/Prefab_Floor.tscn" id="1_dc5lj"]
+[ext_resource type="PackedScene" uid="uid://dfyk56iaurx72" path="res://Chasel's/Prefabs/Prefab_Ready_Wall.tscn" id="2_k3cnq"]
+
+[node name="SceneEnvironment" type="Node3D" unique_id=1406989524]
+
+[node name="PrefabFloor" parent="." unique_id=1221140598 instance=ExtResource("1_dc5lj")]
+
+[node name="PrefabReadyWall" parent="." unique_id=1801545161 instance=ExtResource("2_k3cnq")]
+
+[node name="PrefabReadyWall2" parent="." unique_id=253466501 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(-0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 17, 0, 0)
+
+[node name="PrefabReadyWall3" parent="." unique_id=1218974857 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(-3.059797e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.059797e-08, 0, 0, -17)
+
+[node name="PrefabReadyWall4" parent="." unique_id=2089327724 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(3.059797e-08, -6.119594e-08, -0.7, 0, 0.7, -6.119594e-08, -0.7, -2.6749597e-15, -3.059797e-08, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=630821710]
+transform = Transform3D(-0.40364668, 0.64227587, -0.65157586, -0.4951455, 0.4455098, 0.7458901, 0.76935065, 0.623701, 0.13819154, 0, 0, 0)
+light_color = Color(0.66, 0.40766, 0.2508, 1)
+light_energy = 0.5
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=234252040]
+transform = Transform3D(0.8114395, 0.14832811, -0.5653006, 0.28062642, 0.74957114, 0.59949315, 0.51265466, -0.6450907, 0.5666068, 1.8191035, 11.057, -1.8327637)
+light_color = Color(0.30980393, 0.07450981, 0.0627451, 1)
+light_size = 10.0
+light_specular = 1.5
+spot_range = 15.0
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1353766149]
+transform = Transform3D(-0.46120667, 0.6530655, -0.6006612, 0.2806264, 0.7495711, 0.59949315, 0.84174657, 0.10792886, -0.5289746, 1.8191035, 11.057, -14.821229)
+light_color = Color(0.30980393, 0.07450981, 0.0627451, 1)
+light_size = 10.0
+light_specular = 1.5
+spot_range = 15.0
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="." unique_id=1578956237]
+transform = Transform3D(-0.7988763, -0.16379856, 0.57876307, 0.2806264, 0.7495711, 0.59949315, -0.5320202, 0.641337, -0.55284846, 15.318066, 11.057, -14.821229)
+light_color = Color(0.30980393, 0.07450981, 0.0627451, 1)
+light_size = 10.0
+light_specular = 1.5
+spot_range = 15.0
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="." unique_id=1008295181]
+transform = Transform3D(0.53934556, -0.6398033, 0.5475017, 0.28062636, 0.74957114, 0.59949315, -0.793949, -0.16969046, 0.58382356, 15.318066, 11.057, -1.6224356)
+light_color = Color(0.30980393, 0.07450981, 0.0627451, 1)
+light_size = 10.0
+light_specular = 1.5
+spot_range = 15.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1626075158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.408044, 5.5529118, -8.365025)
+light_color = Color(0.72, 0.59220004, 0.20880002, 1)
+light_energy = 2.757
+omni_range = 8.294
+omni_attenuation = -0.144

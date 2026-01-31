@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ngvkfhbibch6"]
+
+[ext_resource type="Texture2D" uid="uid://b80sup1cyht3b" path="res://Chasel's/Textures/Texture_WindowPillar_Base.png" id="1_2aoel"]
+[ext_resource type="Texture2D" uid="uid://cigahdadravka" path="res://Chasel's/Textures/Texture_WindowPillar_Roughness.png" id="2_yfg3s"]
+
+[resource]
+albedo_texture = ExtResource("1_2aoel")
+roughness = 0.35
+roughness_texture = ExtResource("2_yfg3s")
+roughness_texture_channel = 3
