@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://deks381p26ywk"]
+
+[ext_resource type="Script" uid="uid://l3ox51lkxjue" path="res://KaraStuff/MaskManager.gd" id="1_spg77"]
+
+[node name="MaskManager" type="Node3D" unique_id=1794890609]
+script = ExtResource("1_spg77")

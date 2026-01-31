@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dhuspkcej56gx"]
+
+[ext_resource type="PackedScene" uid="uid://deks381p26ywk" path="res://KaraStuff/MaskManager.tscn" id="1_kd31s"]
+
+[node name="TestScene" type="Node3D" unique_id=163321980]
+
+[node name="MaskManager" parent="." unique_id=1794890609 instance=ExtResource("1_kd31s")]
