@@ -25,8 +25,8 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="1.2365039"
-     inkscape:cx="310.553"
-     inkscape:cy="143.95425"
+     inkscape:cx="100.28274"
+     inkscape:cy="63.889809"
      inkscape:window-width="1371"
      inkscape:window-height="938"
      inkscape:window-x="62"
@@ -109,12 +109,14 @@
        id="path1"
        sodipodi:nodetypes="cccccc"
        inkscape:path-effect="#path-effect1"
-       inkscape:original-d="M 26.458333,31.749999 15.875,37.041665 10.583333,21.166666 l 10.583333,-5.291667 5.291667,3.175 z" />
+       inkscape:original-d="M 26.458333,31.749999 15.875,37.041665 10.583333,21.166666 l 10.583333,-5.291667 5.291667,3.175 z"
+       inkscape:label="mask" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
        d="m 21.166666,21.166666 -5.291666,2.116666 2.116666,6.350001 5.291667,-2.116667 z m 10.583334,0 5.291666,2.116666 -2.116666,6.350001 -5.291667,-2.116667 z"
        id="path2"
        inkscape:path-effect="#path-effect3"
-       inkscape:original-d="m 21.166666,21.166666 -5.291666,2.116666 2.116666,6.350001 5.291667,-2.116667 z" />
+       inkscape:original-d="m 21.166666,21.166666 -5.291666,2.116666 2.116666,6.350001 5.291667,-2.116667 z"
+       inkscape:label="eyes" />
   </g>
 </svg>

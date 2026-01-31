@@ -2,10 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://deks381p26ywk" path="res://KaraStuff/MaskManager.tscn" id="1_kd31s"]
 [ext_resource type="PackedScene" uid="uid://b613d8bkeq1x3" path="res://KaraStuff/Dancer.tscn" id="2_cruk7"]
+[ext_resource type="PackedScene" uid="uid://cc8q1yvcafb6o" path="res://KaraStuff/ClueManager.tscn" id="2_rel6p"]
 
 [node name="TestScene" type="Node3D" unique_id=163321980]
 
 [node name="MaskManager" parent="." unique_id=1794890609 instance=ExtResource("1_kd31s")]
+
+[node name="ClueManager" parent="." unique_id=1918060756 instance=ExtResource("2_rel6p")]
 
 [node name="Dancer" parent="." unique_id=1651563437 instance=ExtResource("2_cruk7")]
 

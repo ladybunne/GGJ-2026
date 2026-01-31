@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cc8q1yvcafb6o"]
+
+[ext_resource type="Script" uid="uid://dfa8esgcrbsvl" path="res://KaraStuff/ClueManager.gd" id="1_vh2vb"]
+
+[node name="ClueManager" type="Node3D" unique_id=1918060756]
+script = ExtResource("1_vh2vb")
