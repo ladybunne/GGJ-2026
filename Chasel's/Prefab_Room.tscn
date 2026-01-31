@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://colaa66khdh3h"]
 
-[ext_resource type="ArrayMesh" uid="uid://l7rdyvq74j3h" path="res://Mesh_Room.obj" id="1_ole3c"]
-[ext_resource type="Material" uid="uid://f44gtsbhe1yg" path="res://Mat_Room.tres" id="1_the87"]
+[ext_resource type="ArrayMesh" uid="uid://l7rdyvq74j3h" path="res://Chasel's/Mesh_Room.obj" id="1_ole3c"]
+[ext_resource type="Material" uid="uid://f44gtsbhe1yg" path="res://Materials/Mat_Room.tres" id="1_the87"]
 
 [node name="PrefabRoom" type="Node3D" unique_id=809112772]
 

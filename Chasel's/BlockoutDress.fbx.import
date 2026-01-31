@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dsjqj3ckrd032"
-path="res://.godot/imported/BlockoutDress.fbx-f46a4b7fd538036d52d950844af62587.scn"
+path="res://.godot/imported/BlockoutDress.fbx-8ea304b490996f4b0248e80828831507.scn"
 
 [deps]
 
-source_file="res://BlockoutDress.fbx"
-dest_files=["res://.godot/imported/BlockoutDress.fbx-f46a4b7fd538036d52d950844af62587.scn"]
+source_file="res://Chasel's/BlockoutDress.fbx"
+dest_files=["res://.godot/imported/BlockoutDress.fbx-8ea304b490996f4b0248e80828831507.scn"]
 
 [params]
 

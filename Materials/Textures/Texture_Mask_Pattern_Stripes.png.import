@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ilc0v5a4cts4"
-path.s3tc="res://.godot/imported/Room_Texture.png-427cb96f217d447e32e2228211cd29fd.s3tc.ctex"
+uid="uid://bdnq56fbnq0wk"
+path.s3tc="res://.godot/imported/Texture_Mask_Pattern_Stripes.png-83cef65dcaa376a94c7ba29cd3c455cf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Room_Texture.png"
-dest_files=["res://.godot/imported/Room_Texture.png-427cb96f217d447e32e2228211cd29fd.s3tc.ctex"]
+source_file="res://Materials/Textures/Texture_Mask_Pattern_Stripes.png"
+dest_files=["res://.godot/imported/Texture_Mask_Pattern_Stripes.png-83cef65dcaa376a94c7ba29cd3c455cf.s3tc.ctex"]
 
 [params]
 
