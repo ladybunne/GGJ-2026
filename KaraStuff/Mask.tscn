@@ -2,11 +2,5 @@
 
 [ext_resource type="Script" uid="uid://coamyc0rh714t" path="res://KaraStuff/Mask.gd" id="1_eho3e"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_eho3e"]
-
 [node name="Mask" type="Node3D" unique_id=527544622]
 script = ExtResource("1_eho3e")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=697830735]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("SphereMesh_eho3e")

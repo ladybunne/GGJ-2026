@@ -1,18 +1,40 @@
 # Keeps track of clues learned.
 class_name ClueManager extends Node3D
 
+var target_mask: MaskData :
+	get():
+		return MaskManager.target_mask
+
 @export var clues: Array[ClueData]
 @export var target_name: String = ""
 
+var last_preamble_string_index: int = -1
 var last_clue_string_index: int = -1
 
-func _init() -> void:
+func _ready() -> void:
 	# Pick a random target name.
 	target_name = Strings.TARGET_NAMES[RNG.rng.randi_range(0, Strings.TARGET_NAMES.size() - 1)]
 	
 	# Generate a random clue and print it.
-	var clue = generate_new_clue()
-	print(format_clue_string(clue))
+	for i in range(1, 50):
+		var clue = generate_new_clue()
+		if clue != null:
+			print("{i} {clue}".format({
+				"i": i,
+				"clue": format_clue_string(clue)}
+			))
+		else:
+			print("{i} {noclue}".format({
+				"i": i,
+				"noclue": "No clue left to generate."
+			}))
+			print("Known mask: {colour} {pattern} {shape} mask with a {accessory}".format({
+				"colour": MaskData.MASK_COLOUR_NAMES[MaskData.MASK_COLOURS.find(target_mask.colour)],
+				"pattern": MaskData.MaskPattern.find_key(target_mask.pattern).to_lower(),
+				"shape": MaskData.MaskShape.find_key(target_mask.shape).to_lower(),
+				"accessory": MaskData.MaskAccessory.find_key(target_mask.accessory).to_lower()
+			}))
+			break
 
 func generate_new_clue() -> ClueData:
 	# Need to prevent useless clues.
@@ -23,26 +45,32 @@ func generate_new_clue() -> ClueData:
 	
 	# For each category...
 	for category in categories:
-		
 		# Filter to only clues of that category.
 		var relevant_clues = clues.filter(func (clue: ClueData): return clue.clue_category == category)
 		# Compile a list of values that show up in clues of this category.
-		var existing_values = clues.map(func (clue: ClueData): return clue.clue_value)
+		var existing_values = relevant_clues.map(func (clue: ClueData): return clue.clue_value)
 		
 		# If there's less than the total size of the category, it's available.
-		if existing_values.size() < get_array_for_clue_category(category).size():
-			available_categories.append(category)
+		#if existing_values.size() < get_array_for_clue_category(category).size():
+			#available_categories.append(category)
 		
 		# Invert the existing values to get the available values.
-		var available_values = range(0, get_array_for_clue_category(category).size() - 1)
+		var available_values = range(0, get_array_for_clue_category(category).size())
 		for value in existing_values:
 			available_values.remove_at(available_values.find(value))
+		
+		if available_values.size() > 0:
+			available_categories.append(category)
 			
 		# Add them to the category availability dictionary.
 		available_clues_per_category[category] = available_values
 	
-	# If no clues are available, just crash for now, we can do something else later.
-	assert(available_categories.size() > 0)
+	if available_categories.size() <= 0:
+		# No clues are available, so they should know the mask now.
+		return null
+	
+	for testing_category in available_categories:
+		assert(available_clues_per_category[testing_category].size() > 0)
 	
 	# Now, randomly pick an available category...
 	var chosen_category = available_categories[RNG.rng.randi_range(0, available_categories.size() - 1)]
@@ -56,11 +84,22 @@ func generate_new_clue() -> ClueData:
 	if new_clue_string_index == last_clue_string_index:
 		new_clue_string_index = (new_clue_string_index + 1) % Strings.CLUE_FORMATS.size()
 	
+	var new_preamble_string_index = RNG.rng.randi_range(0, Strings.CLUE_PREAMBLES.size() - 1)
+	if new_preamble_string_index == last_preamble_string_index:
+		new_preamble_string_index = (new_preamble_string_index + 1) % Strings.CLUE_PREAMBLES.size()
+	
+	var new_clue_string = "{preamble} {actual_clue}".format({
+		"preamble": Strings.CLUE_PREAMBLES[new_preamble_string_index],
+		"actual_clue": Strings.CLUE_FORMATS[new_clue_string_index]
+	})
+	
 	# Create the new clue.
-	var new_clue = ClueData.new(Strings.CLUE_FORMATS[new_clue_string_index], chosen_category, chosen_value)
+	var new_clue = ClueData.new(new_clue_string, chosen_category, chosen_value)
 	
 	# Put the new clue in the clues array.
 	clues.append(new_clue)
+	last_clue_string_index = new_clue_string_index
+	last_preamble_string_index = new_preamble_string_index
 	
 	# Finally...
 	return new_clue

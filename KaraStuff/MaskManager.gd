@@ -1,6 +1,8 @@
 # Manager to create permutations of masks.
 class_name MaskManager extends Node3D
 
+static var target_mask: MaskData
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	initialise_dancers()
@@ -19,6 +21,10 @@ func initialise_dancers() -> void:
 	
 	# For each dancer, get a random permutation.
 	permutations.shuffle()
+	
+	target_mask = permutations[RNG.rng.randi_range(0, dancers.size())]
+	target_mask = permutations[0]
+	
 	for i in range(0, dancers.size()):
 		dancers[i].mask_data = permutations[i]
 	
