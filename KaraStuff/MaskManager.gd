@@ -23,7 +23,7 @@ func initialise_dancers() -> void:
 	permutations.shuffle()
 	
 	target_mask = permutations[RNG.rng.randi_range(0, dancers.size())]
-	target_mask = permutations[0]
+	#target_mask = permutations[0]
 	
 	for i in range(0, dancers.size()):
 		dancers[i].mask_data = permutations[i]

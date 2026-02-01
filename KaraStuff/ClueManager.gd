@@ -14,27 +14,6 @@ var last_clue_string_index: int = -1
 func _ready() -> void:
 	# Pick a random target name.
 	target_name = Strings.TARGET_NAMES[RNG.rng.randi_range(0, Strings.TARGET_NAMES.size() - 1)]
-	
-	# Generate a random clue and print it.
-	for i in range(1, 50):
-		var clue = generate_new_clue()
-		if clue != null:
-			print("{i} {clue}".format({
-				"i": i,
-				"clue": format_clue_string(clue)}
-			))
-		else:
-			print("{i} {noclue}".format({
-				"i": i,
-				"noclue": "No clue left to generate."
-			}))
-			print("Known mask: {colour} {pattern} {shape} mask with a {accessory}".format({
-				"colour": MaskData.MASK_COLOUR_NAMES[MaskData.MASK_COLOURS.find(target_mask.colour)],
-				"pattern": MaskData.MaskPattern.find_key(target_mask.pattern).to_lower(),
-				"shape": MaskData.MaskShape.find_key(target_mask.shape).to_lower(),
-				"accessory": MaskData.MaskAccessory.find_key(target_mask.accessory).to_lower()
-			}))
-			break
 
 func generate_new_clue() -> ClueData:
 	# Need to prevent useless clues.
@@ -155,3 +134,25 @@ static func get_string_value_for_clue(p_clue_category: String, p_clue_value: int
 		_:
 			assert(false)
 			return ""
+
+func clue_testing():
+	# Generate a random clue and print it.
+	for i in range(1, 50):
+		var clue = generate_new_clue()
+		if clue != null:
+			print("{i} {clue}".format({
+				"i": i,
+				"clue": format_clue_string(clue)}
+			))
+		else:
+			print("{i} {noclue}".format({
+				"i": i,
+				"noclue": "No clue left to generate."
+			}))
+			print("Known mask: {colour} {pattern} {shape} mask with a {accessory}".format({
+				"colour": MaskData.MASK_COLOUR_NAMES[MaskData.MASK_COLOURS.find(target_mask.colour)],
+				"pattern": MaskData.MaskPattern.find_key(target_mask.pattern).to_lower(),
+				"shape": MaskData.MaskShape.find_key(target_mask.shape).to_lower(),
+				"accessory": MaskData.MaskAccessory.find_key(target_mask.accessory).to_lower()
+			}))
+			break
