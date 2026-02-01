@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dns1kvvqv6fno" path="res://DancerSpacer.gd" id="1_ue3c1"]
 [ext_resource type="PackedScene" uid="uid://colaa66khdh3h" path="res://Chasel's/Prefab_Room.tscn" id="3_ue3c1"]
+[ext_resource type="PackedScene" uid="uid://buysd5aal7fpc" path="res://Chasel's/Scenes/Scene_Environment.tscn" id="4_7jqr2"]
 [ext_resource type="PackedScene" uid="uid://b613d8bkeq1x3" path="res://KaraStuff/Dancer.tscn" id="4_ki0jj"]
 
 [node name="Lochie" type="Node3D" unique_id=431371010]
@@ -117,9 +118,14 @@ near = 0.004
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1018801700]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5366602, 0)
+visible = false
 light_energy = 1.515
 light_indirect_energy = 1.17
 light_size = 1.0
 omni_range = 16.494
 
 [node name="PrefabRoom2" parent="." unique_id=809112772 instance=ExtResource("3_ue3c1")]
+visible = false
+
+[node name="SceneEnvironment" parent="." unique_id=1406989524 instance=ExtResource("4_7jqr2")]
+transform = Transform3D(1.429, 0, 0, 0, 1.429, 0, 0, 0, 1.429, -12.5, 0, 12.5)
