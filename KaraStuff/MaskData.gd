@@ -8,12 +8,12 @@ class_name MaskData extends Resource
 #
 # Enum names will get converted to lowercase, which should be fine.
 
-const MASK_COLOURS: Array[Color] = [Color.BEIGE, Color.RED, Color.BLUE, Color.ORANGE, Color.PURPLE]
-const MASK_COLOUR_NAMES: Array[String] = ["beige", "red", "blue", "orange", "purple"]
+const MASK_COLOURS: Array[Color] = [Color.RED, Color.CORNFLOWER_BLUE, Color.ORANGE, Color.PURPLE]
+const MASK_COLOUR_NAMES: Array[String] = ["red", "blue", "gold", "purple"]
 
 @export_color_no_alpha var colour: Color = Color.WHITE
 
-enum MaskPattern { PLAIN, STRIPED, SPOTTED }
+enum MaskPattern { PLAIN, STRIPED, SPOTTED, SHATTERED }
 @export var pattern: MaskPattern = MaskPattern.PLAIN
 
 enum MaskShape { BUTTERFLY, WINGED, EARED, OVAL, HEART, SHIELD, HALF }

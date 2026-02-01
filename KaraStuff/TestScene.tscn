@@ -13,7 +13,7 @@
 [node name="Dancer" parent="." unique_id=1651563437 instance=ExtResource("2_cruk7")]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=770454134]
-transform = Transform3D(0.8980624, -0.058975182, 0.42853665, 0, 0.97450763, 0.22435492, -0.4488557, -0.19880535, 0.8758968, 1.0833169, 1.7366436, 2.8332734)
+transform = Transform3D(0.89449716, -0.09168803, 0.43757084, 0, 0.9787442, 0.20508482, -0.44707376, -0.18344776, 0.87548393, 0.69987524, 1.2829595, 1.547647)
 rotation_edit_mode = 2
 current = true
 

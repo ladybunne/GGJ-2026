@@ -50,6 +50,20 @@ func generate_new_clue() -> ClueData:
 		# Compile a list of values that show up in clues of this category.
 		var existing_values = relevant_clues.map(func (clue: ClueData): return clue.clue_value)
 		
+		# Add target mask value to existing values so we don't accidentally remove its traits.
+		var target_value: int
+		match category:
+			"colour": 
+				target_value = MaskData.MASK_COLOURS.find(target_mask.colour)
+			"pattern":
+				target_value = target_mask.pattern
+			"shape":
+				target_value = target_mask.shape
+			"accessory":
+				target_value = target_mask.accessory
+		
+		existing_values.append(target_value)
+		
 		# If there's less than the total size of the category, it's available.
 		#if existing_values.size() < get_array_for_clue_category(category).size():
 			#available_categories.append(category)
