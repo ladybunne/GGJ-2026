@@ -53,6 +53,8 @@ var attire_darken_factor = 0.4
 		mask_data = p_mask_data
 		if mask_data != null:
 			mask_data.debug_print()
+			mask.mask_data = mask_data
+			update_attire()
 
 @export var dress: bool = true :
 	set(p_dress):
@@ -61,14 +63,15 @@ var attire_darken_factor = 0.4
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	mask.mask_data = mask_data
-	update_attire()
+	dress = RNG.rng.randi_range(0, 1) == 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
 func update_attire() -> void:
+	if mask_data == null:
+		return
 	if dress_scene != null and suit_scene != null:
 		if hair_hat_mesh != null:
 			hair_hat_mesh.free()
