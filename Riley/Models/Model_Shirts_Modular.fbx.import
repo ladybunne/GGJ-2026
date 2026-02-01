@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c3xn5isr5ycgy"
-path="res://.godot/imported/Model_Tops_Modular.fbx-152bc1c508d2914f20662cb34a920752.scn"
+uid="uid://cd0cq3fct5cp3"
+path="res://.godot/imported/Model_Shirts_Modular.fbx-889aad9aec4e2ddbda7b9ecd36ef79bc.scn"
 
 [deps]
 
-source_file="res://Riley/Models/Model_Tops_Modular.fbx"
-dest_files=["res://.godot/imported/Model_Tops_Modular.fbx-152bc1c508d2914f20662cb34a920752.scn"]
+source_file="res://Riley/Models/Model_Shirts_Modular.fbx"
+dest_files=["res://.godot/imported/Model_Shirts_Modular.fbx-889aad9aec4e2ddbda7b9ecd36ef79bc.scn"]
 
 [params]
 
