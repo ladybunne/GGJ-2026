@@ -21,6 +21,13 @@ const ACCESSORY_PREFABS: Array[PackedScene] = [
 	preload("res://Riley/Prefabs/Accessories/P_accessories_teardrop.tscn")
 ]
 
+static var pattern_materials: Array[StandardMaterial3D] = [
+	StandardMaterial3D.new(),
+	preload("res://Materials/Mat_Mask_Pattern_Stripes.tres"),
+	preload("res://Materials/Mat_Mask_Pattern_Dots.tres"),
+	preload("res://Materials/Mat_Mask_Pattern_Shatter.tres"),
+]
+
 @export var mask_data: MaskData : 
 	set(p_mask_data):
 		mask_data = p_mask_data
@@ -49,7 +56,15 @@ func update_appearance() -> void:
 	# Colour
 	var mask_material = StandardMaterial3D.new()
 	mask_material.albedo_color = mask_data.colour
+	var mask_pattern_material = pattern_materials[mask_data.pattern].duplicate()
+	mask_pattern_material.albedo_color = mask_data.colour
+
+	var first = true
 	for child in mask_prefab.get_children(true):
+		if first:
+			child.material_override = mask_pattern_material
+			first = false
+			continue
 		child.material_override = mask_material
 	
 	var accessory_material = StandardMaterial3D.new()
