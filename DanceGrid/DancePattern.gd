@@ -39,7 +39,7 @@ func _process(delta: float) -> void:
 	pass
 
 
-func GetTowardDirectionAt(dancePos : Vector2i) -> int:
+func GetTowardDirectionAt(dancePos : Vector2i) -> DanceDirection:
 	var index = GridUtils.IndexOf1DFrom2D(cols, rows, dancePos)
 	return towardDirections[index];
 
