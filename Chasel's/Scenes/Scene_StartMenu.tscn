@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://ki3uded55050"]
+
+[ext_resource type="Texture2D" uid="uid://cnmfgcbahbunf" path="res://UI/UI_Menu_BG.png" id="1_mvde8"]
+[ext_resource type="Script" uid="uid://demflui7k6f2a" path="res://Chasel's/Scenes/scene_start_menu.gd" id="1_qq5qb"]
+[ext_resource type="Texture2D" uid="uid://dlvg7y3tnhd0y" path="res://UI/UI_Menu_Credits.png" id="2_qq5qb"]
+[ext_resource type="Texture2D" uid="uid://r3ely506lc3e" path="res://UI/UI_Menu_Exit.png" id="3_a7ko4"]
+[ext_resource type="Texture2D" uid="uid://d3qryugy8k30a" path="res://UI/UI_Menu_Start.png" id="4_y3to8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qq5qb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a7ko4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y3to8"]
+
+[node name="SceneStartMenu" type="Control" unique_id=812617486]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qq5qb")
+
+[node name="UiMenuBg" type="Sprite2D" parent="." unique_id=385693618]
+texture = ExtResource("1_mvde8")
+centered = false
+
+[node name="Button_Start" type="Button" parent="." unique_id=407793303]
+layout_mode = 0
+offset_left = 333.0
+offset_top = 423.0
+offset_right = 533.0
+offset_bottom = 534.0
+scale = Vector2(1.5, 1.5)
+theme_override_icons/icon = ExtResource("4_y3to8")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qq5qb")
+
+[node name="Button_Exit" type="Button" parent="." unique_id=195306325]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 776.0
+offset_right = 544.0
+offset_bottom = 885.0
+scale = Vector2(1.5, 1.5)
+theme_override_icons/icon = ExtResource("3_a7ko4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_a7ko4")
+
+[node name="Button_Credits" type="Button" parent="." unique_id=1939953377]
+layout_mode = 0
+offset_left = 327.0
+offset_top = 583.0
+offset_right = 627.0
+offset_bottom = 702.0
+scale = Vector2(1.5, 1.5)
+theme_override_icons/icon = ExtResource("2_qq5qb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y3to8")
+
+[connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Button_Exit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="Button_Credits" to="." method="_on_button_credits_pressed"]
