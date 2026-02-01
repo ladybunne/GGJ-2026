@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cvdp6d1ews7h3"
-path="res://.godot/imported/Model_Masks_Modular.fbx-e848259f9f6d36812bf19fb8e79ab173.scn"
+uid="uid://c3xn5isr5ycgy"
+path="res://.godot/imported/Model_Tops_Modular.fbx-152bc1c508d2914f20662cb34a920752.scn"
 
 [deps]
 
-source_file="res://Riley/Models/Model_Masks_Modular.fbx"
-dest_files=["res://.godot/imported/Model_Masks_Modular.fbx-e848259f9f6d36812bf19fb8e79ab173.scn"]
+source_file="res://Riley/Models/Model_Tops_Modular.fbx"
+dest_files=["res://.godot/imported/Model_Tops_Modular.fbx-152bc1c508d2914f20662cb34a920752.scn"]
 
 [params]
 
