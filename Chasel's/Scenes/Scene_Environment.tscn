@@ -15,8 +15,20 @@ transform = Transform3D(-0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 17, 0, 0)
 [node name="PrefabReadyWall3" parent="." unique_id=1218974857 instance=ExtResource("2_k3cnq")]
 transform = Transform3D(-3.059797e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.059797e-08, 0, 0, -17)
 
+[node name="PrefabReadyWall6" parent="." unique_id=1012591842 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(-3.059797e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.059797e-08, 16, 0, -17)
+
 [node name="PrefabReadyWall4" parent="." unique_id=2089327724 instance=ExtResource("2_k3cnq")]
 transform = Transform3D(3.059797e-08, -6.119594e-08, -0.7, 0, 0.7, -6.119594e-08, -0.7, -2.6749597e-15, -3.059797e-08, 0, 0, 0)
+
+[node name="PrefabReadyWall5" parent="." unique_id=916941687 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(3.059797e-08, -6.119594e-08, -0.7, 0, 0.7, -6.119594e-08, -0.7, -2.6749597e-15, -3.059797e-08, 16, 0, 0)
+
+[node name="PrefabReadyWall7" parent="." unique_id=284728148 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(-3.059797e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.059797e-08, -16, 0, -17)
+
+[node name="PrefabReadyWall8" parent="." unique_id=1095891484 instance=ExtResource("2_k3cnq")]
+transform = Transform3D(3.059797e-08, -6.119594e-08, -0.7, 0, 0.7, -6.119594e-08, -0.7, -2.6749597e-15, -3.059797e-08, -16, 0, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=630821710]
 transform = Transform3D(-0.40364668, 0.64227587, -0.65157586, -0.4951455, 0.4455098, 0.7458901, 0.76935065, 0.623701, 0.13819154, 0, 0, 0)

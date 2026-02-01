@@ -1,8 +1,8 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bcae5h1wug61u"]
 
 [ext_resource type="Texture2D" uid="uid://dipb3gxvfwnxq" path="res://Chasel's/Textures/Texture_Env_Floor_base.png" id="1_8vvos"]
-[ext_resource type="Texture2D" uid="uid://cno3s2vs3stb6" path="res://Chasel's/Textures/Texture_Env_Floor_R.png" id="2_et6mw"]
+[ext_resource type="Texture2D" uid="uid://d2ck6dxw7v5b1" path="res://Chasel's/Textures/Texture_Env_Floor_Roughness.png" id="2_8vvos"]
 
 [resource]
 albedo_texture = ExtResource("1_8vvos")
-roughness_texture = ExtResource("2_et6mw")
+roughness_texture = ExtResource("2_8vvos")

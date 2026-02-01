@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cwqnvdvtr53gv"]
+
+[ext_resource type="PackedScene" uid="uid://j7huewq8ctlp" path="res://Riley/Models/Model_Character_Dress_Base.fbx" id="1_pfwxa"]
+[ext_resource type="PackedScene" uid="uid://cjm3wfluowg0c" path="res://Riley/Models/Model_Character_Mask_Base.fbx" id="2_w2xmv"]
+[ext_resource type="PackedScene" uid="uid://ddruvsvrixv3" path="res://Riley/Prefabs/Hairs & Hats/P_hairstyle_1.tscn" id="3_f5ghk"]
+[ext_resource type="PackedScene" uid="uid://dmnfn45bdn6b8" path="res://Riley/Prefabs/Hairs & Hats/P_hat_1.tscn" id="4_3wq2e"]
+
+[node name="PrefabAnimateCharacter" type="Node3D" unique_id=1759390309]
+
+[node name="Model_Character_Dress_Base" parent="." unique_id=829835003 instance=ExtResource("1_pfwxa")]
+
+[node name="Model_Character_Mask_Base" parent="." unique_id=15206486 instance=ExtResource("2_w2xmv")]
+
+[node name="P_hairstyle_1" parent="." unique_id=894900539 instance=ExtResource("3_f5ghk")]
+
+[node name="hat_1" parent="." unique_id=1132765437 instance=ExtResource("4_3wq2e")]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 0, 0.09984511, 0)

@@ -1,0 +1,272 @@
+[gd_scene format=3 uid="uid://clncv3po4v5s8"]
+
+[ext_resource type="PackedScene" uid="uid://buysd5aal7fpc" path="res://Chasel's/Scenes/Scene_Environment.tscn" id="1_kw52m"]
+[ext_resource type="PackedScene" uid="uid://j7huewq8ctlp" path="res://Riley/Models/Model_Character_Dress_Base.fbx" id="2_r5wam"]
+[ext_resource type="PackedScene" uid="uid://cjm3wfluowg0c" path="res://Riley/Models/Model_Character_Mask_Base.fbx" id="3_l1h05"]
+[ext_resource type="PackedScene" uid="uid://ddruvsvrixv3" path="res://Riley/Prefabs/Hairs & Hats/P_hairstyle_1.tscn" id="4_bhjth"]
+[ext_resource type="PackedScene" uid="uid://dmnfn45bdn6b8" path="res://Riley/Prefabs/Hairs & Hats/P_hat_1.tscn" id="5_0b7sm"]
+
+[sub_resource type="Animation" id="Animation_83ky2"]
+resource_name = "Anim_End_Falling"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(2, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -0.7832514, 0), Vector3(-0.78192383, -0.051372264, -1.4979562)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(3.9137316, 0, -7.768435), Vector3(3.9137316, 0.19875991, -7.768435)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Camera3D:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.0999999, 2, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.00566459, -0.5597198, 0.0035491672), Vector3(-0.0056645903, -0.55971974, 0.0035491667), Vector3(-0.0056645903, -0.55971974, 0.0035491667), Vector3(-0.5024798, -0.6889937, -0.21518393)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Camera3D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.0999999, 2, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(3.1498609, 1.2270318, -5.2693305), Vector3(3.3612843, 1.2270317, -5.7115927), Vector3(3.3612843, 1.2270317, -5.7115927), Vector3(4.2001977, 1.056072, -6.3084235)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Model_Character_Mask_Base:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2.001, 6.8779, 12),
+"transitions": PackedFloat32Array(1, 1.8024969, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-0.030814823, -0.38343546, -0.3537158), Vector3(-0.04008715, -0.82604, -0.8072281)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Model_Character_Mask_Base:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.001, 6.9, 12),
+"transitions": PackedFloat32Array(1, 1.6245071, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.33809614, 0.102858305, 0.17611504), Vector3(0.38542938, 0.42127943, -0.34445763)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("P_hairstyle_1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(2, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0, 0), Vector3(-1.5707964, -1.3456489, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("hat_1:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(2, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0, 0), Vector3(-1.5707964, -1.3456489, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../MeshInstance3D:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.96669996, 1.1, 2.0333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_3lhr7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.7832514, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(3.9137316, 0, -7.768435)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Camera3D:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.0056645903, -0.55971974, 0.0035491667)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Camera3D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(3.3612843, 1.2270317, -5.7115927)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Model_Character_Mask_Base:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Model_Character_Mask_Base:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("P_hairstyle_1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("hat_1:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5707964, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../MeshInstance3D:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ig3fs"]
+_data = {
+&"Anim_End_Falling": SubResource("Animation_83ky2"),
+&"RESET": SubResource("Animation_3lhr7")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r5wam"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l1h05"]
+
+[node name="SceneToAnimate" type="Node3D" unique_id=1246144993]
+
+[node name="SceneEnvironment" parent="." unique_id=1406989524 instance=ExtResource("1_kw52m")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=767244685]
+root_node = NodePath("../PrefabAnimateCharacter")
+libraries/ = SubResource("AnimationLibrary_ig3fs")
+
+[node name="PrefabAnimateCharacter" type="Node3D" parent="." unique_id=1759390309]
+transform = Transform3D(0.708623, 0, -0.7055869, 0, 0.99999994, 0, 0.705587, 0, 0.7086229, 3.9137316, 0, -7.768435)
+
+[node name="Model_Character_Dress_Base" parent="PrefabAnimateCharacter" unique_id=829835003 instance=ExtResource("2_r5wam")]
+
+[node name="Model_Character_Mask_Base" parent="PrefabAnimateCharacter" unique_id=15206486 instance=ExtResource("3_l1h05")]
+transform = Transform3D(0.99999964, 0, 0, 0, 0.99999964, 0, 0, 0, 0.9999996, 0, 0, 0)
+
+[node name="P_hairstyle_1" parent="PrefabAnimateCharacter" unique_id=894900539 instance=ExtResource("4_bhjth")]
+transform = Transform3D(100, 0, 0, 0, -4.3711384e-06, 99.99999, 0, -99.99999, -4.3711384e-06, 0, 0, 0)
+
+[node name="hat_1" parent="PrefabAnimateCharacter" unique_id=1132765437 instance=ExtResource("5_0b7sm")]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 0, 0.09984511, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=440981825]
+transform = Transform3D(0.84740925, 0, -0.5309402, 0.0035491025, 0.99997765, 0.00566456, 0.5309283, -0.0066845617, 0.84739035, 3.3612843, 1.2270317, -5.7115927)
+fov = 45.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=300648544]
+transform = Transform3D(0.034199044, -0.27475992, 1.4270208, 1.277023, 0.06852138, 0, -0.09859952, 0.79216254, 0.49495926, 4.0008893, 1.7349925, -5.8929076)
+material_override = SubResource("StandardMaterial3D_r5wam")
+mesh = SubResource("PlaneMesh_l1h05")
