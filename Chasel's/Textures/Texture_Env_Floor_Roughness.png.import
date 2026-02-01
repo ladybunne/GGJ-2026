@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cno3s2vs3stb6"
-path.s3tc="res://.godot/imported/Texture_Env_Floor_R.png-6a7f16fa6c27ec89c83aa90daf057202.s3tc.ctex"
+uid="uid://d2ck6dxw7v5b1"
+path.s3tc="res://.godot/imported/Texture_Env_Floor_Roughness.png-aba8313fae6f9b31ad47a4b89fa8eaf3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Chasel's/Textures/Texture_Env_Floor_R.png"
-dest_files=["res://.godot/imported/Texture_Env_Floor_R.png-6a7f16fa6c27ec89c83aa90daf057202.s3tc.ctex"]
+source_file="res://Chasel's/Textures/Texture_Env_Floor_Roughness.png"
+dest_files=["res://.godot/imported/Texture_Env_Floor_Roughness.png-aba8313fae6f9b31ad47a4b89fa8eaf3.s3tc.ctex"]
 
 [params]
 
